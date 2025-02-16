@@ -1,0 +1,58 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INK ANIMATION</title>
+    <link rel="stylesheet" href="dayseven.css">
+</head>
+<body>
+   <div class="banner">
+    <div class="content">
+        <div class="title">LUNDEV</div>
+        <p>Subscribe to see more</p>
+    </div>
+   </div>
+</body>
+</html>-->
+
+<!--Dark Mode/Light Mode-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timing</title>
+    <link rel="stylesheet" href="dayseven.html" />
+  </head>
+  <body>
+    <style>
+        .box {
+            border: 2px solid red;
+            height: 404px;
+            width: 300px;
+            background-image: url(images/runnnn.png);
+            background-size: auto 300%;
+            --position-top: 0;
+            background-position: 0 var(--position-top);
+            animation: jump 1s steps(9) infinite;
+        }
+        .box.pose {
+            --position-top: 50%;
+        }
+
+        .box.run {
+            --position-top: 100%;
+        }
+        
+        @keyframes Jump {
+            to {
+                background-position: 100% var(--position-top) ;
+            }
+        }
+    </style>
+
+    <div class="box run"></div>
+  </body>
+</html>
